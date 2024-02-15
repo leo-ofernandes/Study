@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi cum totam
+      velit magnam. Nam sapiente labore, dolorem deleniti recusandae placeat.
+    </p>
+
+    <form action="" id="survey-form">
+      Name:
+      <label for="name" id="name-label">
+        <input type="text" id="name" placeholder="Enter your Name" required />
+      </label>
+
+      <label for="email" id="email-label"
+        >Email:
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your Email"
+          required
+        />
+      </label>
+
+      <label for="number" id="number-label"
+        >Age:
+        <input type="number" id="number" min="10" max="99" placeholder="Age" />
+      </label>
+
+      <label for="dropdown"
+        >How did you hear about us?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </label>
+
+      <label for="student-account">
+        <input
+          id="student-account"
+          type="radio"
+          value="student-account"
+          name="account-type"
+        />
+        Student Account</label
+      >
+
+      <label for="teacher-account"
+        ><input
+          id="teacher-account"
+          type="radio"
+          value="teacher-account"
+          name="account-type"
+        />
+        Teacher Account</label
+      >
+
+      <label for="terms-and-conditions">
+        <input
+          id="terms-and-conditions"
+          type="checkbox"
+          value="terms-and-conditions"
+          required
+        />
+        I accept the <a href="#">terms and conditions</a>
+      </label>
+
+      <p>Choose your favorite hobbies:</p>
+
+      <input type="checkbox" id="camping" name="camping" value="hobbie" />
+      <label for="camping"> Camping</label>
+
+      <input type="checkbox" id="reading" name="reading" value="hobbie" />
+      <label for="reading"> Reading</label>
+
+      <input type="checkbox" id="hiking" name="hiking" value="hobbie" />
+      <label for="hiking"> Hiking</label>
+
+      <input type="checkbox" id="yoga" name="yoga" value="hobbie" />
+      <label for="yoga"> Yoga</label>
+
+      <input type="checkbox" id="cooking" name="cooking" value="hobbie" />
+      <label for="cooking"> Cooking</label>
+
+      <textarea name="comments" id="comments" cols="30" rows="10">
+Add your personal comments here...</textarea
+      >
+
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
